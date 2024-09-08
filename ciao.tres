@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="DialoguePageContainer" load_steps=7 format=3 uid="uid://bn1rgfefm3wnc"]
+
+[ext_resource type="Script" path="res://dialouge_page.gd" id="1_m3ac3"]
+[ext_resource type="Script" path="res://dialogue_page_container.gd" id="2_im5y6"]
+
+[sub_resource type="Resource" id="Resource_b4phb"]
+script = ExtResource("1_m3ac3")
+text = "Ciao"
+
+[sub_resource type="Resource" id="Resource_kdjxr"]
+script = ExtResource("1_m3ac3")
+text = "[color=yellow]Ehy"
+
+[sub_resource type="Resource" id="Resource_sl7py"]
+script = ExtResource("1_m3ac3")
+text = "[shake]eeeehi[/shake]  [i]come stai[i] [b]???[/b]"
+
+[sub_resource type="Resource" id="Resource_jpl0m"]
+script = ExtResource("1_m3ac3")
+text = "{Guarda la documentazione di \"RichTextLabel\" per più info sul BBCode}"
+
+[resource]
+script = ExtResource("2_im5y6")
+dialogue_pages = Array[ExtResource("1_m3ac3")]([SubResource("Resource_b4phb"), SubResource("Resource_kdjxr"), SubResource("Resource_sl7py"), SubResource("Resource_jpl0m")])
