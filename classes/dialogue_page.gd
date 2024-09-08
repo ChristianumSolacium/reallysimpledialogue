@@ -3,6 +3,8 @@ extends Resource
 class_name DialoguePage
 
 signal text_changed(text:String)
+
+
 @export_multiline var text : String :
 	set(value):
 		text = value

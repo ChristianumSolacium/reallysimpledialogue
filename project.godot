@@ -11,6 +11,5 @@ config_version=5
 [application]
 
 config/name="ReallySimpleDialogueWindow"
-run/main_scene="res://dialogue.tscn"
+run/main_scene="res://test_scene/dialogue.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
-config/icon="res://icon.svg"

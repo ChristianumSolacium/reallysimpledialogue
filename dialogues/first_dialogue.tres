@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="DialoguePageContainer" load_steps=7 format=3 uid="uid://dwyeas08ubb71"]
+
+[ext_resource type="Script" path="res://classes/dialogue_page.gd" id="1_eyxyk"]
+[ext_resource type="FontFile" uid="uid://dc5dm1rdw6x0" path="res://fonts/AboutToRain.otf" id="2_i68ny"]
+[ext_resource type="Script" path="res://classes/dialogue_page_container.gd" id="3_uwbtr"]
+
+[sub_resource type="Resource" id="Resource_v3hyf"]
+script = ExtResource("1_eyxyk")
+text = "[b]Ciao,[i] come stai ? [/i] [/b] io [color=yellow][shake]Bene[/shake][char=1F600]"
+fonts = null
+
+[sub_resource type="Resource" id="Resource_frnx5"]
+script = ExtResource("1_eyxyk")
+text = "[color=light_gray]Non sono nemmeno sclerato [color=dark_red][i][font_size=25]troppo[/font_size][/i][/color] a fare questo [font=res://fonts/AboutToRain.otf][font_size=40][bgcolor=dark_green]progettino"
+fonts = Array[Font]([ExtResource("2_i68ny")])
+
+[sub_resource type="Resource" id="Resource_qbbyv"]
+script = ExtResource("1_eyxyk")
+text = "sono [outline_size=2][outline_color=green]FELICE[/outline_color][/outline_size] di come è venuto
+"
+fonts = null
+
+[resource]
+script = ExtResource("3_uwbtr")
+pages = Array[ExtResource("1_eyxyk")]([SubResource("Resource_v3hyf"), SubResource("Resource_frnx5"), SubResource("Resource_qbbyv")])

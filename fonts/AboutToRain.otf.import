@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://dc5dm1rdw6x0"
-path="res://.godot/imported/AboutToRain.otf-88bff590cf599194377bb173257b7d7d.fontdata"
+path="res://.godot/imported/AboutToRain.otf-940f810e45476affe14b3a9f23e3ad95.fontdata"
 
 [deps]
 
-source_file="res://AboutToRain.otf"
-dest_files=["res://.godot/imported/AboutToRain.otf-88bff590cf599194377bb173257b7d7d.fontdata"]
+source_file="res://fonts/AboutToRain.otf"
+dest_files=["res://.godot/imported/AboutToRain.otf-940f810e45476affe14b3a9f23e3ad95.fontdata"]
 
 [params]
 

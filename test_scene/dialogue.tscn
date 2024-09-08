@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://dxgx3tip0swvr"]
+
+[ext_resource type="Script" path="res://classes/DialogueLabel.gd" id="1_vv0bg"]
+[ext_resource type="Resource" uid="uid://dwyeas08ubb71" path="res://dialogues/first_dialogue.tres" id="2_gn7hk"]
+[ext_resource type="Script" path="res://test_scene/test_button.gd" id="3_ee3rt"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="DialogueLabel" type="RichTextLabel" parent="."]
+offset_right = 251.0
+offset_bottom = 102.0
+bbcode_enabled = true
+text = "[color=light_gray]Non sono nemmeno sclerato [color=dark_red][i][font_size=25]troppo[/font_size][/i][/color] a fare questo [font=res://fonts/AboutToRain.otf][font_size=40][bgcolor=dark_green]progettino"
+script = ExtResource("1_vv0bg")
+dialogue_pages = ExtResource("2_gn7hk")
+
+[node name="TestButton" type="Button" parent="." node_paths=PackedStringArray("dialogue_label")]
+offset_left = 36.0
+offset_top = 97.0
+offset_right = 130.0
+offset_bottom = 128.0
+text = "NEXT PAGE"
+script = ExtResource("3_ee3rt")
+dialogue_label = NodePath("../DialogueLabel")
+
+[connection signal="pressed" from="TestButton" to="TestButton" method="_on_pressed"]
